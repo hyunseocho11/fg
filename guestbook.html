@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방명록</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="content">
+        <h1>방명록</h1>
+        
+        <form id="guestbookForm">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">메시지:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitGuestbook()">방명록 남기기</button>
+        </form>
+
+        <ul id="guestbookList">
+            <!-- 방명록이 나타날 곳 -->
+        </ul>
+
+
+    <p>한 번 등록한 방명록은 삭제되지 않으니 주의하십시오.</p>
+    </div>
+
+    <script>
+        function submitGuestbook() {
+            // 폼에서 입력된 값 가져오기
+            const nameInput = document.getElementById('name');
+            const messageInput = document.getElementById('message');
+            const name = nameInput.value;
+            const message = messageInput.value;
+
+            // 방명록 리스트에 추가
+            const guestbookList = document.getElementById('guestbookList');
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<strong>${name}:</strong> ${message}`;
+            guestbookList.appendChild(listItem);
+
+            // 폼 초기화
+            nameInput.value = '';
+            messageInput.value = '';
+        }
+    </script>
+
+</body>
+</html>

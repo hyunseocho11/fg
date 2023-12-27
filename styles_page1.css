@@ -1,0 +1,38 @@
+body.page1 {
+    /* 페이지 1의 배경 이미지 URL을 수정하세요. */
+    background-image: url('AA.30995773.1.jpg');
+    /* 필요에 따라 추가적인 배경 스타일을 설정하세요. */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* 추가적인 스타일을 지정하세요. */
+    color: rgb(255, 0, 0);
+}
+
+.content {
+    /* 추가적인 스타일을 지정할 수 있습니다. */
+    text-align: center;
+    margin-top: 50px; /* 필요에 따라 조절하세요. */
+}
+
+h1 {
+    /* 추가적인 스타일을 지정할 수 있습니다. */
+    font-size: 2em;
+}
+
+ul {
+    /* 추가적인 스타일을 지정할 수 있습니다. */
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    /* 추가적인 스타일을 지정할 수 있습니다. */
+    margin: 10px 0;
+}
+
+button {
+    /* 추가적인 스타일을 지정할 수 있습니다. */
+    padding: 10px;
+    margin-top: 10px;
+}
